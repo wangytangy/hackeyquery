@@ -6,7 +6,7 @@ Hackey Query is a light Javascript Library that simplifies various HTML document
 
 ## Here is a list of the major features:
 
-#### `$l(selector)`
+### `$l(selector)`
 
 The `$l` selector accepts a single argument, identifying nodes in the HTML page using `CSS` selectors if the argument is a string. It can also receive an `HTMLElement`, converting it into a `NodeList` array-like object and packages it into a `DOMNodeCollection` class that will make a variety of methods available to it.
 
@@ -30,7 +30,7 @@ function $l(arg) {
 }
 ```
 
-#### `DOMNodeCollection`
+### `DOMNodeCollection`
 
 The `DOMNodeCollection` class receives an array of `HTMLElements` and stores it as an instance variable. Class methods defined within `DOMNodeCollection` will be applied to every node in the array, allowing for custom, simplified DOM manipulation.
 
@@ -44,7 +44,7 @@ class DOMNodeCollection {
 }
 ```
 
-#### Appending and Removing Nodes
+### Appending and Removing Nodes
 Appends a node's outerHTML to a parent node's innerHTML. Ensures child nodes are cloned so it can be appended to multiple parent nodes instead of being moved and replaced in each iteration.
 
 ```Javascript
@@ -66,7 +66,7 @@ append(children) {
 }
 ```
 
-#### Add and Remove Event Listeners
+### Adding and Removing Event Listeners
 
 The `on` method takes an event type such as `click` or `submit` and a callback function to execute on event activation. The callback is stored in the node's `hackeyQueryEvent` attribute for easy removal by the `off` method without the need to specify the name of the callback function. The `off` method iterates through the array of callbacks for a given event type, removes the event listener and clears the `hackeyQueryEvent` attribute.
 
@@ -97,7 +97,7 @@ off(eventType) {
   });
 }
 ```
-#### Searching nodes from a given Parent node
+### Searching nodes from a given Parent node
 
 The `find(selector)` method returns a `DOMNodeCollection` instance of all descendant nodes matching the given selector. This allows other `DOMNodeCollection` class methods to be chained on matched nodes for further manipulation.
 
@@ -114,7 +114,7 @@ find(selector) {
 }
 ```
 
-#### $l.ajax
+### Simplified AJAX requests
 
 A simplified `XMLHttpRequest` that takes an options hash in addition to providing sensible default parameters. $l.ajax returns a `Promise` object allowing for chained asynchronous functions without the need to write nested callbacks that invoke the next async call. Simply add the `.then` method, passing in success and error callbacks on the returned `Promise` object.
 
@@ -151,7 +151,7 @@ $l.ajax = (options) => {
 };
 ```
 
-#### On Document Ready
+### On Document Ready
 
 The `$l` function can also receive a function. The function will be invoked when the page has loaded. Otherwise it will be passed to `registerCallbackFunction` to be stored in an array (queue) of callback functions to be called when the page is loaded.
 
