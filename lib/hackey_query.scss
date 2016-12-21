@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, img,
+footer, header, hgroup, menu, nav, section, button {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: lato, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div#root {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+div.button-container-one {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #ff7e82;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 10px 0 10px;
+
+  transition: background-color 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #FF8F92;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #2AB27B;
+  color: #fff;
+  display: block;
+  width: 200px;
+  border-radius: 5px;
+
+  font-size: 24px;
+}
+
+ul.list {
+  height: 400px;
+  overflow: scroll;
+  margin-bottom: 40px;
+}
+
+ul.list li {
+  font-family: serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+ul.list li.styled {
+  font-family: lato, sans-serif;
+  color: #fff;
+  background-color: #3aa3e3;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+div.button-container-two {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+div.gif-container {
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 30%;
+  margin: 10px auto;
+
+}

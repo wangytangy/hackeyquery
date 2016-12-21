@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HackeyQuery</title>
+    <link rel="stylesheet" type="text/css" href="lib/hackey_query.scss" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="lib/jquery_lite.js"></script>
   </head>
@@ -11,20 +12,32 @@
 
       <h2>HackeyQuery Demo</h2>
 
-      <p>Awesome list</p>
-      <button type="button" class="add-li">Add Sentence</button>
-      <button type="button" class="clear-li">Clear Sentences</button>
+      <h3>Awesome list</h3>
+
+      <div class="button-container-one">
+        <button type="button" class="add-li">Add Sentence</button>
+        <button type="button" class="clear-li">Clear Sentences</button>
+        <button id="beautify" type="button">Toggle Sentence Classes</button>
+      </div>
+
       <ul class="list">
         <li>This is sentence number 1</li>
         <li>This is sentence number 2</li>
         <li>This is sentence number 3</li>
       </ul>
+
+
+      <div class="button-container-two">
+        <button type="button" class="get-gif">Add random GIF!</button>
+        <button type="button" class="remove-gif">Remove GIFs</button>
+      </div>
+
+      <div class="gif-container">
+
+      </div>
+
     </div>
 
-    <button type="button" class="get-gif">Add random GIF!</button>
-    <button type="button" class="remove-gif">Remove GIFs</button>
-    <div class="gif-container">
-    </div>
 
   </body>
 </html>
