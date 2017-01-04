@@ -6,7 +6,7 @@
 
 Hackey Query is a light Javascript Library that simplifies various HTML document manipulation, traversal, event handling, and AJAX functions. The library consists of methods based on vanilla Javascript and the native DOM API built into every modern browser.
 
-## Here is a list of the major features:
+## Here are some of the major features:
 
 ### `$l(selector)`
 
