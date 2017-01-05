@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +56,15 @@ table {
 	background-color: #F0E2AF;
 }
 
+.right-side {
+	background-color: #c36795;
+
+	padding-bottom: 30px;
+}
+
+.bottom {
+	background-color: #f0e2af;
+}
 
 
 #grid {
@@ -81,7 +94,6 @@ table {
 
 nav {
 	padding: 30px 0 0px 0;
-	margin-bottom: 40px;
 	border-bottom: 1px solid #696;
 	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.25);
 	height: 60px;
@@ -159,14 +171,17 @@ button:hover {
 
 h3 {
   text-align: center;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px 0px;
   background-color: #008F95;
 
   color: #eee;
   display: block;
-  width: 900px;
+
   font-weight: bold;
+
+	border-bottom: 1px solid #696;
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.25);
 
   font-size: 24px;
 }
@@ -174,7 +189,6 @@ h3 {
 ul.list {
   height: 400px;
   overflow: scroll;
-  margin-bottom: 40px;
 }
 
 ul.list li {
@@ -192,6 +206,23 @@ ul.list li.styled {
   width: 200px;
   margin: 20px auto;
   border-radius: 5px;
+}
+
+h4 {
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	padding: 20px 0px;
+	background-color: #008F95;
+
+	color: #eee;
+	display: block;
+
+	font-weight: bold;
+
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.25);
+
+	font-size: 24px;
 }
 
 div.button-container-two {
