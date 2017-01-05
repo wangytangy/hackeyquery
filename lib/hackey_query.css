@@ -135,23 +135,26 @@ button.grid-button {
 }
 
 button.grid-button:hover {
-	background-color: #eb6e80;
-	box-shadow: 0 4px 2px -2px #EB4680
+	background-color: #05774C;
+	box-shadow: 0 3px 5px -1px #034029;
 }
 
 button {
   color: #fff;
+	background-color: #e24e42;
   padding: 10px 20px;
   border-radius: 5px;
   outline: none;
   margin: 0 10px 0 10px;
 
-  transition: background-color 0.4s;
+  transition: background-color 0.3s;
+	transition: box-shadow 0.2s;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #FF8F92;
+  background-color: #05774C;
+	box-shadow: 0 3px 5px -1px #034029;
 }
 
 h3 {
@@ -185,9 +188,9 @@ ul.list li {
 ul.list li.styled {
   font-family: lato, sans-serif;
   color: #fff;
-  background-color: #3aa3e3;
+  background-color: #e9b000;
   width: 200px;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 5px;
 }
 
