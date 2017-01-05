@@ -42,11 +42,17 @@ table {
 	border-spacing: 0;
 }
 
-div#root {
-  width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+.group {
+	content: "";
+	display: block;
+	clear: both;
 }
+
+#root {
+	background-color: #F0E2AF;
+}
+
+
 
 #grid {
 	width: 400px;
@@ -62,8 +68,8 @@ div#root {
 .square {
 	width: 100px;
 	height: 100px;
-	background-color: blue;
-	border: 1px solid #ccc;
+	/*background-color: blue;*/
+	border: 1px solid #676767;
 	box-sizing: border-box;
 
 	border-radius: 10px;
@@ -73,13 +79,44 @@ div#root {
 	background-color: red;
 }
 
-h2 {
-  text-align: center;
-  font-size: 24px;
-  padding: 10px 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
+nav {
+	padding: 30px 0 0px 0;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #696;
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.25);
+	height: 60px;
 
+	color: #eee;
+
+	background-color: #008f95;
+
+	position: relative;
+	display: flex;
+
+}
+
+h2 {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	margin-left: -200px;
+	margin-top: -24px;
+
+	font-weight: bold;
+	font-size: 36px;
+}
+
+nav ul {
+	display: flex;
+	align-self: baseline;
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	margin: 0 10px 0 0;
 }
 
 div.button-container-one {
@@ -90,19 +127,19 @@ div.button-container-one {
 div.button-container-three {
   display: flex;
   justify-content: center;
+	margin: 0 10px;
 }
 
 button.grid-button {
-	background-color: #2AB27B;
+	background-color: #e24e42;
 }
 
 button.grid-button:hover {
-	background-color: #2AB27B;
-	box-shadow: 0 4px 2px -2px #247051;
+	background-color: #eb6e80;
+	box-shadow: 0 4px 2px -2px #EB4680
 }
 
 button {
-  background-color: #ff7e82;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -121,13 +158,12 @@ h3 {
   text-align: center;
   margin: 40px auto;
   padding: 20px 0px;
-  /*background-color: #2AB27B;*/
-	border-top: 2px solid #2AB27B;
-	border-bottom: 2px solid #2AB27B;
-  color: #000;
+  background-color: #008F95;
+
+  color: #eee;
   display: block;
-  width: 600px;
-  /*border-radius: 5px;*/
+  width: 900px;
+  font-weight: bold;
 
   font-size: 24px;
 }
@@ -163,12 +199,17 @@ div.button-container-two {
 
 div.gif-container {
 
-  flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	display: flex;
   justify-content: center;
+	margin: 0 auto;
+	min-height: 500px;
+
+	overflow: scroll;
 }
 
 img {
-  width: 30%;
   margin: 10px auto;
-
+	width: 300px
 }

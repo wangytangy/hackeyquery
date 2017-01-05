@@ -8,60 +8,73 @@
     <script type="text/javascript" src="lib/bundle.js"></script>
   </head>
   <body>
-    <div id="root">
+    <section id="root">
 
-      <h2>HackeyQuery Demo</h2>
-      <div id="grid">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+      <nav class="group">
+        <h2>HackeyQuery Demo</h2>
+        <ul>
+          <li>github</li>
+          <li>linkedin</li>
+          <li>portfolio</li>
+        </ul>
+      </nav>
 
-      <div class="button-container-three">
-        <button type="button" class="grid-button" id="grid-random-colors">Random Colors</button>
-        <button type="button" class="grid-button" id="grid-mouseover">Turn on mouse over</button>
-        <button type="button" class="grid-button" id="grid-click">Turn on click</button>
-      </div>
+      <article class="left-side">
+        <div id="grid">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
 
-      <h3>Awesome list</h3>
+        <div class="button-container-three">
+          <button type="button" class="grid-button" id="grid-random-colors">Random Colors</button>
+          <button type="button" class="grid-button" id="grid-mouseover">Turn on mouse over</button>
+          <button type="button" class="grid-button" id="grid-click">Turn on click</button>
+        </div>
+      </article>
 
-      <div class="button-container-one">
-        <button type="button" class="add-li">Add Sentence</button>
-        <button type="button" class="clear-li">Clear Sentences</button>
-        <button id="beautify" type="button">Toggle Sentence Classes</button>
-      </div>
+      <article class="right-side">
+        <h3>Awesome list</h3>
 
-      <ul class="list">
-        <li>This is sentence number 1</li>
-        <li>This is sentence number 2</li>
-        <li>This is sentence number 3</li>
-      </ul>
+        <div class="button-container-one">
+          <button type="button" class="add-li">Add Sentence</button>
+          <button type="button" class="clear-li">Clear Sentences</button>
+          <button id="beautify" type="button">Toggle Sentence Classes</button>
+        </div>
 
+        <ul class="list">
+          <li>This is sentence number 1</li>
+          <li>This is sentence number 2</li>
+          <li>This is sentence number 3</li>
+        </ul>
+      </article>
 
+      <article class="bottom">
+        <h3>Make GIFs!</h3>
+        <div class="button-container-two">
+          <button type="button" class="get-gif">Add random GIF!</button>
+          <button type="button" class="remove-gif">Remove GIFs</button>
+        </div>
 
-      <div class="button-container-two">
-        <button type="button" class="get-gif">Add random GIF!</button>
-        <button type="button" class="remove-gif">Remove GIFs</button>
-      </div>
+        <div class="gif-container">
 
-      <div class="gif-container">
+        </div>
+      </article>
 
-      </div>
-
-    </div>
+    </section>
 
 
   </body>
